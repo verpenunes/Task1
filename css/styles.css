@@ -7,6 +7,22 @@ body {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.background {
+    background-image: url("../images/home-header.jpg");
+    background-size: cover;
+    min-height: 900px;
+    background-repeat: no-repeat;
+}
+
+.home-info {
+    border-radius: 40px 40px 40px 40px;
+    width: 900px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
 h1,
 h2,
 .logo {
@@ -48,4 +64,6 @@ header a {
 footer {
     text-align: center;
 }
+
+
 
