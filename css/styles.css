@@ -7,22 +7,6 @@ body {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.background {
-    background-image: url("../images/home-header.jpg");
-    background-size: cover;
-    min-height: 900px;
-    background-repeat: no-repeat;
-}
-
-.home-info {
-    border-radius: 40px 40px 40px 40px;
-    width: 900px;
-}
-
-.profile-pic {
-    border-radius: 50%;
-}
-
 h1,
 h2,
 .logo {
@@ -41,6 +25,7 @@ footer {
 
 header a {
     color:white;
+    text-decoration: none;
 }
 
 .cta {
@@ -65,5 +50,47 @@ footer {
     text-align: center;
 }
 
+/* Home Page */
+.background {
+    background-image: url("../images/home-header.jpg");
+    background-size: cover;
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.selling-points_images {
+    border-radius: 100px;
+    width: 900px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+/* Conact Page */
+input,select,textarea {
+    broder: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+
+/* Nav Menu */
+ul {
+    padding: 0px;
+}
+
+li {
+    display: inline;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
 
 
