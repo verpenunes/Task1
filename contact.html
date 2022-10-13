@@ -19,23 +19,36 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contact">
         <h1>Contact</h1>
     <form action="submit.php" methot="POST">
-        <label for="name">Full Name</label>
-        <input type="text" id="Full name" name="fullname">
-        <label for="email">Email</label>
-        <input type="email" id="Email" name="Email">
-        <label for="guitar">Guitar</label>
-        <select name="guitar" id="Guitar">
-            <option value="Adirndack Red">Adirondack Red</option>
-            <option value="Adirndack Blue">Adirondack Blue</option>
-            <option value="Adirndack Green">Adirondack Green</option>
-        </select>
-        <input type="checkbox" id="update" name="update">
-        <label for="update">Sign up for email updates.</label>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        <div class="form-wrapper">
+            <section>
+                <label for="name">Full Name</label>
+                <input type="text" id="Full name" name="fullname">
+                <label for="email">Email</label>
+                <input type="email" id="Email" name="Email">
+                <label for="guitar">Guitar</label>
+                <select name="guitar" id="Guitar">
+                    <option value="Adirndack Red">Adirondack Red</option>
+                    <option value="Adirndack Blue">Adirondack Blue</option>
+                    <option value="Adirndack Green">Adirondack Green</option>
+                </select>
+                <div>
+                    <input type="checkbox" id="update" name="update">
+                    <label for="update">Sign up for email updates.</label>
+                </div>
+
+            </section>
+            <section>
+                <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+            </section>
+
+        </div>
+
+
+        
         <input type="submit" value="Send Now" class="cta" />
     </form>    
     </main>

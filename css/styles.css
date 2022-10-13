@@ -17,6 +17,29 @@ h2,
     font-family: "Roboto",  Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Nav Menu */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: 25px;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 header,
 footer {
     background-color: #202020;
@@ -26,11 +49,26 @@ footer {
 header a {
     color:white;
     text-decoration: none;
+    padding: 10px;
 }
+
 
 .cta {
     background-color: #bb0000;
     color: white;
+    font-size: 0.9em;
+    padding: 10px 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.cta-small {
+    padding: 8px 30px;
+    font-size: 0.8em;
+}
+
+.product-specific__price {
     font-size: 1.5em;
 }
 
@@ -38,7 +76,7 @@ header a {
     background-color: #e8e8e8;
 }
 
-.featured--products {
+.featured__products {
     background-color: #fbfbfb;
 }
 
@@ -51,46 +89,132 @@ footer {
 }
 
 /* Home Page */
-.background {
+.welcome {
     background-image: url("../images/home-header.jpg");
     background-size: cover;
     min-height: 70vh;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+    position: relative;
+}
+
+.welcome__content {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+}
+
+.selling-points,
+.reviews__content {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.selling-points > *, .reviews__content > * {
+    flex: 1;
 }
 
 .selling-points_images {
     border-radius: 100px;
-    width: 900px;
+    width: 100%;
+} 
+
+.reviews {
+    text-align: center;
+    padding: 50px;
 }
 
-.profile-pic {
+.reviews__content {
+    text-align: left;
+    margin: auto;
+}
+
+.reviews__content div {
+    margin: 50px;
+}
+
+.review_images {
+    width: 80px;
     border-radius: 50%;
+    float: right;
+}
+
+.reviews_name {
+    display: block;
 }
 
 /* Conact Page */
-input,select,textarea {
-    broder: 1px solid #c4c4c4;
+input,
+select,
+textarea {
+    border: 1px solid #c4c4c4;
     border-radius: 5px;
-}
-
-/* Nav Menu */
-ul {
-    padding: 0px;
-}
-
-li {
-    display: inline;
-}
-
-nav a {
+    margin: 10px 10px 10px 0px;
     padding: 10px;
-    text-decoration: none;
 }
 
-.underline {
-    text-decoration: underline;
+textarea {
+    height: 65%;
 }
+
+.contact {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.form-wrapper {
+    display: flex;
+    text-align: left;
+    margin: 50px auto;
+}
+
+.form-wrapper > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product Specific Page */
+.product-specific {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.product-specific > * {
+    flex: 1;
+}
+
+.product-specific__details {
+    padding: 0px 30px;
+}
+
+.product-specific__details a {
+    display: block;
+    width: 95.767px;
+    margin: auto;
+
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-image_thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+
+
+
 
 
